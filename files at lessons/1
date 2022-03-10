@@ -1,0 +1,23 @@
+students = ["Вася", "Маша", "Петя", "Дима", "Марина", "Люба", "Коля", "Ваня"]
+grades = {"Вася" : 4, "Петя" : 9, "Марина" : 8, "Люба" : 4, "Коля" : 5, "Ваня": 10}
+for stud in students:
+    if stud in grades:
+        print(f"{stud} оценка:{grades[stud]}")
+    else:
+        print(f"{stud} контрольную работу не писал(а)")
+print(" ")
+for stud in students:
+    if stud in grades:
+       if grades[stud]>=8:
+           print(f"{stud} оценка:{grades[stud]}")
+good=[]
+bad=[]
+print(" ")
+for stud in grades:
+        if grades[stud]>=8:
+           good.append(stud)
+        else:
+            bad.append(stud)
+print("Хорошие оценки",good)
+print("Плохие оценки",bad)
+        
